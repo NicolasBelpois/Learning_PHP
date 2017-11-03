@@ -55,6 +55,10 @@
     </form>
     <p><?php
    extract($_GET);
+   $age = 0;
+   $language = "non";
+   $genre = "homme";
+
 
 
    if ($age < 12 and $language == "non") {
@@ -116,18 +120,6 @@
     }
   }
   ?></p>
-
-<form action="conditions.php" method="post">
-  <label for="note">Inscrit ta note entre 0 et 20</label>
-  <input type="number" name="note_eleve" value="">
-</form>
-<?php
-extract($_POST);
-
-if ($note_eleve <= 3) {
-  echo "Tu est trop nul !";
-}
-?>
 
   </body>
 </html>
