@@ -1,0 +1,62 @@
+#wrapper {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-gap: 10px;
+}
+
+/************************************************************************/
+
+#messages {
+  padding: 5px 20px 15px 20px;
+  word-wrap: break-word;
+  background-color: #e0d4c2;
+}
+
+#messages h3 {
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: lighter;
+  font-family: "Courier New", serif;
+  background-color: #74726a;
+}
+
+#messages strong {
+  font-size: 1.1em;
+}
+
+#messages strong:hover {
+  font-size: 1.2em;
+}
+
+#messages em {
+  font-size: 0.8em;
+  color: #70706c;
+}
+
+/************************************************************************/
+
+#envoi {
+  padding: 10px;
+  word-wrap: break-word;
+  background-color: #e0d4c2;
+}
+
+#envoi input  {
+  padding: 5px;
+  margin: 10px;
+}
+
+#envoi input[type=submit] {
+  width: 100px;
+}
+
+/************************************************************************/
+
+@media all and (max-width: 1000px) {
+  #wrapper {
+    grid-template-columns: 1fr;
+  }
+
+}
